@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="bean"
+            type="com.dev.mystudio.MyData" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:padding="10sp"
+        android:layout_margin="10sp"
+        app:cardCornerRadius="7sp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:padding="10sp"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5sp"
+                android:textColor="@color/black"
+                android:text='@{bean.name}' />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:padding="5sp"
+                android:textStyle="bold"
+                android:text='@{bean.phone}' />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
